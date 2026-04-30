@@ -33,7 +33,7 @@ def get_season(month):
 
 df['season'] = df['arrest_month'].apply(get_season)
 
-# Add hot/cold label (simple version based on NYC averages)
+# Add hot/cold label
 def get_temp_category(month):
     if month in [6, 7, 8, 9]:
         return 'Hot (Jun-Sep)'
